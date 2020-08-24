@@ -10,7 +10,8 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
 
-        primaryStage.setTitle("Hello world!");
+        primaryStage.setTitle("Unit Converter");
+        primaryStage.setScene(new MainMenuController(new MainMenuView(), new MainMenuModel(), primaryStage).getScene());
         primaryStage.show();
     }
 }
