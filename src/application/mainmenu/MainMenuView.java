@@ -1,3 +1,6 @@
+package application.mainmenu;
+
+import application.Constants;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.HPos;
@@ -39,21 +42,21 @@ public class MainMenuView {
         scene = new Scene(pane, Constants.WINDOW_WIDTH, Constants.WINDOW_HEIGHT);
     }
 
-    public void addListeners(EventHandler<ActionEvent> listener) {
+    protected void addListeners(EventHandler<ActionEvent> listener) {
 
         lengthButton.setOnAction(listener);
         massButton.setOnAction(listener);
     }
 
-    public Scene getScene() {
+    protected Scene getScene() {
         return scene;
     }
 
-    public Button getLengthButton() {
+    protected Button getLengthButton() {
         return lengthButton;
     }
 
-    public Button getMassButton() {
+    protected Button getMassButton() {
         return massButton;
     }
 }

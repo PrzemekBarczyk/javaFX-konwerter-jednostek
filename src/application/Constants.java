@@ -1,3 +1,5 @@
+package application;
+
 public class Constants {
 
     public final static int WINDOW_WIDTH = 300;
