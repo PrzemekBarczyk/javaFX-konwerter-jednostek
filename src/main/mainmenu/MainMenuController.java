@@ -1,4 +1,4 @@
-package application.mainmenu;
+package main.mainmenu;
 
 //import application.Main;
 //import application.lengthconverter.LengthConverterController;

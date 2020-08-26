@@ -1,4 +1,4 @@
-package application.mainmenu;
+package main.mainmenu;
 
 public class MainMenuModel {
 
