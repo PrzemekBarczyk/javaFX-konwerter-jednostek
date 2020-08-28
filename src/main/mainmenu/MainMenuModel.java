@@ -1,6 +1,6 @@
 package main.mainmenu;
 
-public class MainMenuModel {
+class MainMenuModel {
 
     // brak danych do wykorzystania w Modelu
 }

@@ -12,13 +12,13 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 
-public class MainMenuView {
+class MainMenuView {
 
     private Scene scene;
     private Button lengthButton;
     private Button massButton;
 
-    public MainMenuView() {
+    MainMenuView() {
 
         GridPane pane = new GridPane();
         pane.setAlignment(Pos.CENTER);
@@ -42,21 +42,21 @@ public class MainMenuView {
         scene = new Scene(pane, Constants.WINDOW_WIDTH, Constants.WINDOW_HEIGHT);
     }
 
-    protected void addListeners(EventHandler<ActionEvent> listener) {
+    void addListeners(EventHandler<ActionEvent> listener) {
 
         lengthButton.setOnAction(listener);
         massButton.setOnAction(listener);
     }
 
-    protected Scene getScene() {
+    Scene getScene() {
         return scene;
     }
 
-    protected Button getLengthButton() {
+    Button getLengthButton() {
         return lengthButton;
     }
 
-    protected Button getMassButton() {
+    Button getMassButton() {
         return massButton;
     }
 }

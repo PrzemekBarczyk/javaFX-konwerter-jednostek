@@ -1,8 +1,6 @@
 package main;
 
 import main.mainmenu.MainMenuController;
-import main.mainmenu.MainMenuModel;
-import main.mainmenu.MainMenuView;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -20,7 +18,7 @@ public class Main extends Application {
 
         primaryStage = stage;
         primaryStage.setTitle("Unit Converter");
-        primaryStage.setScene(new MainMenuController(new MainMenuView(), new MainMenuModel()).getScene());
+        primaryStage.setScene(new MainMenuController().getScene());
         primaryStage.show();
     }
 
