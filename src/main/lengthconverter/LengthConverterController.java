@@ -76,25 +76,25 @@ public class LengthConverterController {
     private void updateViewUnitValues(String selectedUnit) {
 
         if (!selectedUnit.equals("mm"))
-            theView.getMmValueTextField().setText(theModel.getMmValue());
+            theView.getMmValueTextField().setFormatedText(theModel.getMmValue());
         if (!selectedUnit.equals("cm"))
-            theView.getCmValueTextField().setText(theModel.getCmValue());
+            theView.getCmValueTextField().setFormatedText(theModel.getCmValue());
         if (!selectedUnit.equals("dm"))
-            theView.getDmValueTextField().setText(theModel.getDmValue());
+            theView.getDmValueTextField().setFormatedText(theModel.getDmValue());
         if (!selectedUnit.equals("m"))
-            theView.getMValueTextField().setText(theModel.getMValue());
+            theView.getMValueTextField().setFormatedText(theModel.getMValue());
         if (!selectedUnit.equals("km"))
-            theView.getKmValueTextField().setText(theModel.getKmValue());
+            theView.getKmValueTextField().setFormatedText(theModel.getKmValue());
         if (!selectedUnit.equals("in"))
-            theView.getInValueTextField().setText(theModel.getInValue());
+            theView.getInValueTextField().setFormatedText(theModel.getInValue());
         if (!selectedUnit.equals("ft"))
-            theView.getFtValueTextField().setText(theModel.getFtValue());
+            theView.getFtValueTextField().setFormatedText(theModel.getFtValue());
         if (!selectedUnit.equals("yd"))
-            theView.getYdValueTextField().setText(theModel.getYdValue());
+            theView.getYdValueTextField().setFormatedText(theModel.getYdValue());
         if (!selectedUnit.equals("mi"))
-            theView.getMiValueTextField().setText(theModel.getMiValue());
+            theView.getMiValueTextField().setFormatedText(theModel.getMiValue());
         if (!selectedUnit.equals("liga"))
-            theView.getLigaValueTextField().setText(theModel.getLigaValue());
+            theView.getLigaValueTextField().setFormatedText(theModel.getLigaValue());
     }
 
     public Scene getScene() {
