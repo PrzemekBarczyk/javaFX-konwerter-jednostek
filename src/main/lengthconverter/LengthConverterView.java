@@ -162,7 +162,26 @@ class LengthConverterView {
         return ligaValueTextField;
     }
 
-    Button getMainMenuButton() {
-        return mainMenuButton;
+    String getUnitValue(String selectedUnit) {
+
+        if (selectedUnit.equals("mm"))
+            return mmValueTextField.getText();
+        if (selectedUnit.equals("cm"))
+            return cmValueTextField.getText();
+        if (selectedUnit.equals("dm"))
+            return dmValueTextField.getText();
+        if (selectedUnit.equals("m"))
+            return mValueTextField.getText();
+        if (selectedUnit.equals("km"))
+            return kmValueTextField.getText();
+        if (selectedUnit.equals("in"))
+            return inValueTextField.getText();
+        if (selectedUnit.equals("ft"))
+            return ftValueTextField.getText();
+        if (selectedUnit.equals("yd"))
+            return ydValueTextField.getText();
+        if (selectedUnit.equals("mi"))
+            return miValueTextField.getText();
+        return ligaValueTextField.getText();
     }
 }

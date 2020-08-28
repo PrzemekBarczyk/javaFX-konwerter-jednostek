@@ -27,12 +27,12 @@ class LengthConverterModel {
         ligaValue = "0";
     }
 
-    void convertMToAll() {
+    void convertMToAllUnits() {
 
         mmValue = String.valueOf(Double.parseDouble(mValue) * 1000);
         cmValue = String.valueOf(Double.parseDouble(mValue) * 100);
         dmValue = String.valueOf(Double.parseDouble(mValue) * 10);
-        kmValue = String.valueOf(Double.parseDouble(mValue) * 1000);
+        kmValue = String.valueOf(Double.parseDouble(mValue) * 0.001);
         inValue = String.valueOf(Double.parseDouble(mValue) * 39.3700787);
         ftValue = String.valueOf(Double.parseDouble(mValue) * 3.2808399);
         ydValue = String.valueOf(Double.parseDouble(mValue) * 1.0936133);
@@ -40,40 +40,28 @@ class LengthConverterModel {
         ligaValue = String.valueOf(Double.parseDouble(mValue) * 0.000207123730745778);
     }
 
-    void convertMmToM() {
-        mValue = String.valueOf(Double.parseDouble(mmValue) * 0.001);
-    }
+    void convertUnitToM(String selectedUnit) {
 
-    void convertCmToM() {
-        mValue = String.valueOf(Double.parseDouble(cmValue) * 0.01);
-    }
-
-    void convertDmToM() {
-        mValue = String.valueOf(Double.parseDouble(dmValue) * 0.1);
-    }
-
-    void convertKmToM() {
-        mValue = String.valueOf(Double.parseDouble(kmValue) * 1000);
-    }
-
-    void convertInToM() {
-        mValue = String.valueOf(Double.parseDouble(inValue) * 0.0254);
-    }
-
-    void convertFtToM() {
-        mValue = String.valueOf(Double.parseDouble(ftValue) * 0.3048);
-    }
-
-    void convertYdToM() {
-        mValue = String.valueOf(Double.parseDouble(ydValue) * 0.9144);
-    }
-
-    void convertMiToM() {
-        mValue = String.valueOf(Double.parseDouble(miValue) * 1609.344);
-    }
-
-    void convertLigaToM() {
-        mValue = String.valueOf(Double.parseDouble(ligaValue) * 4828.032);
+        if (selectedUnit.equals("mm"))
+            mValue = String.valueOf(Double.parseDouble(mmValue) * 0.001);
+        else if (selectedUnit.equals("cm"))
+            mValue = String.valueOf(Double.parseDouble(cmValue) * 0.01);
+        else if (selectedUnit.equals("dm"))
+            mValue = String.valueOf(Double.parseDouble(dmValue) * 0.1);
+        else if (selectedUnit.equals("m"))
+            ;
+        else if (selectedUnit.equals("km"))
+            mValue = String.valueOf(Double.parseDouble(kmValue) * 1000);
+        else if (selectedUnit.equals("in"))
+            mValue = String.valueOf(Double.parseDouble(inValue) * 0.0254);
+        else if (selectedUnit.equals("ft"))
+            mValue = String.valueOf(Double.parseDouble(ftValue) * 0.3048);
+        else if (selectedUnit.equals("yd"))
+            mValue = String.valueOf(Double.parseDouble(ydValue) * 0.9144);
+        else if (selectedUnit.equals("mi"))
+            mValue = String.valueOf(Double.parseDouble(miValue) * 1609.344);
+        else
+            mValue = String.valueOf(Double.parseDouble(ligaValue) * 4828.032);
     }
 
     String getMmValue() {
@@ -116,43 +104,27 @@ class LengthConverterModel {
         return ligaValue;
     }
 
-    void setMmValue(String newValue) {
-        this.mmValue = newValue;
-    }
+    void setUnitValue(String selectedUnit, String newValue) {
 
-    void setCmValue(String newValue) {
-        this.cmValue = newValue;
-    }
-
-    void setDmValue(String newValue) {
-        this.dmValue = newValue;
-    }
-
-    void setMValue(String newValue) {
-        this.mValue = newValue;
-    }
-
-    void setKmValue(String newValue) {
-        this.kmValue = newValue;
-    }
-
-    void setInValue(String newValue) {
-        this.inValue = newValue;
-    }
-
-    void setFtValue(String newValue) {
-        this.ftValue = newValue;
-    }
-
-    void setYdValue(String newValue) {
-        this.ydValue = newValue;
-    }
-
-    void setMiValue(String newValue) {
-        this.miValue = newValue;
-    }
-
-    void setLigaValue(String newValue) {
-        this.ligaValue = newValue;
+        if (selectedUnit.equals("mm"))
+            this.mmValue = newValue;
+        else if (selectedUnit.equals("cm"))
+            this.cmValue = newValue;
+        else if (selectedUnit.equals("dm"))
+            this.dmValue = newValue;
+        else if (selectedUnit.equals("m"))
+            this.mValue = newValue;
+        else if (selectedUnit.equals("km"))
+            this.kmValue = newValue;
+        else if (selectedUnit.equals("in"))
+            this.inValue = newValue;
+        else if (selectedUnit.equals("ft"))
+            this.ftValue = newValue;
+        else if (selectedUnit.equals("yd"))
+            this.ydValue = newValue;
+        else if (selectedUnit.equals("mi"))
+            this.miValue = newValue;
+        else
+            this.ligaValue = newValue;
     }
 }
