@@ -1,7 +1,7 @@
 package main.mainmenu;
 
-//import main.Main;
-//import main.lengthconverter.LengthConverterController;
+import main.Main;
+import main.lengthconverter.LengthConverterController;
 //import main.massconverter.MassConverterController;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -25,9 +25,9 @@ public class MainMenuController implements EventHandler<ActionEvent> {
 
         Object evt = event.getSource();
 
-//        if (evt == theView.getLengthButton()) {
-//            Main.setScene(new LengthConverterController().getScene());
-//        }
+        if (evt == theView.getLengthButton()) {
+            Main.setScene(new LengthConverterController().getScene());
+        }
 //        else if (evt == theView.getMassButton()) {
 //            Main.setScene(new MassConverterController().getScene());
 //        }
