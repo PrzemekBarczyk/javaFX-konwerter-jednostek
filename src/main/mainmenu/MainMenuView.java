@@ -19,6 +19,10 @@ class MainMenuView {
     private Button massButton;
 
     MainMenuView() {
+        this.createGUI();
+    }
+
+    private void createGUI() {
 
         GridPane pane = new GridPane();
         pane.setAlignment(Pos.CENTER);
@@ -42,10 +46,10 @@ class MainMenuView {
         scene = new Scene(pane, Constants.WINDOW_WIDTH, Constants.WINDOW_HEIGHT);
     }
 
-    void addListeners(EventHandler<ActionEvent> listener) {
+    void addEventHandlers(EventHandler<ActionEvent> actionEventHandler) {
 
-        lengthButton.setOnAction(listener);
-        massButton.setOnAction(listener);
+        lengthButton.setOnAction(actionEventHandler);
+        massButton.setOnAction(actionEventHandler);
     }
 
     Scene getScene() {

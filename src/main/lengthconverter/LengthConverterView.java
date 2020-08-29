@@ -29,6 +29,10 @@ class LengthConverterView {
     private NumericFormattedTextField ligaValueTextField;
 
     LengthConverterView() {
+        this.createGUI();
+    }
+
+    private void createGUI() {
 
         GridPane pane = new GridPane();
         pane.setAlignment(Pos.CENTER);
@@ -103,19 +107,19 @@ class LengthConverterView {
         scene = new Scene(pane);
     }
 
-    void addListeners(EventHandler<ActionEvent> actionListener, EventHandler<KeyEvent> keyListener) {
+    void addEventHandlers(EventHandler<ActionEvent> actionEventHandler, EventHandler<KeyEvent> keyEventHandler) {
 
-        mainMenuButton.setOnAction(actionListener);
-        mmValueTextField.setOnKeyReleased(keyListener);
-        cmValueTextField.setOnKeyReleased(keyListener);
-        dmValueTextField.setOnKeyReleased(keyListener);
-        mValueTextField.setOnKeyReleased(keyListener);
-        kmValueTextField.setOnKeyReleased(keyListener);
-        inValueTextField.setOnKeyReleased(keyListener);
-        ftValueTextField.setOnKeyReleased(keyListener);
-        ydValueTextField.setOnKeyReleased(keyListener);
-        miValueTextField.setOnKeyReleased(keyListener);
-        ligaValueTextField.setOnKeyReleased(keyListener);
+        mainMenuButton.setOnAction(actionEventHandler);
+        mmValueTextField.setOnKeyReleased(keyEventHandler);
+        cmValueTextField.setOnKeyReleased(keyEventHandler);
+        dmValueTextField.setOnKeyReleased(keyEventHandler);
+        mValueTextField.setOnKeyReleased(keyEventHandler);
+        kmValueTextField.setOnKeyReleased(keyEventHandler);
+        inValueTextField.setOnKeyReleased(keyEventHandler);
+        ftValueTextField.setOnKeyReleased(keyEventHandler);
+        ydValueTextField.setOnKeyReleased(keyEventHandler);
+        miValueTextField.setOnKeyReleased(keyEventHandler);
+        ligaValueTextField.setOnKeyReleased(keyEventHandler);
     }
 
     Scene getScene() {

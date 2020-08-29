@@ -42,26 +42,27 @@ class LengthConverterModel {
 
     void convertUnitToM(String selectedUnit) {
 
-        if (selectedUnit.equals("mm"))
+        if (selectedUnit.equals("mm")) {
             mValue = String.valueOf(Double.parseDouble(mmValue) * 0.001);
-        else if (selectedUnit.equals("cm"))
+        } else if (selectedUnit.equals("cm")) {
             mValue = String.valueOf(Double.parseDouble(cmValue) * 0.01);
-        else if (selectedUnit.equals("dm"))
+        } else if (selectedUnit.equals("dm")) {
             mValue = String.valueOf(Double.parseDouble(dmValue) * 0.1);
-        else if (selectedUnit.equals("m"))
+        } else if (selectedUnit.equals("m")) {
             ;
-        else if (selectedUnit.equals("km"))
+        } else if (selectedUnit.equals("km")) {
             mValue = String.valueOf(Double.parseDouble(kmValue) * 1000);
-        else if (selectedUnit.equals("in"))
+        } else if (selectedUnit.equals("in")) {
             mValue = String.valueOf(Double.parseDouble(inValue) * 0.0254);
-        else if (selectedUnit.equals("ft"))
+        } else if (selectedUnit.equals("ft")) {
             mValue = String.valueOf(Double.parseDouble(ftValue) * 0.3048);
-        else if (selectedUnit.equals("yd"))
+        } else if (selectedUnit.equals("yd")) {
             mValue = String.valueOf(Double.parseDouble(ydValue) * 0.9144);
-        else if (selectedUnit.equals("mi"))
+        } else if (selectedUnit.equals("mi")) {
             mValue = String.valueOf(Double.parseDouble(miValue) * 1609.344);
-        else
+        } else {
             mValue = String.valueOf(Double.parseDouble(ligaValue) * 4828.032);
+        }
     }
 
     String getMmValue() {
@@ -106,25 +107,26 @@ class LengthConverterModel {
 
     void setUnitValue(String selectedUnit, String newValue) {
 
-        if (selectedUnit.equals("mm"))
+        if (selectedUnit.equals("mm")) {
             this.mmValue = newValue;
-        else if (selectedUnit.equals("cm"))
+        } else if (selectedUnit.equals("cm")) {
             this.cmValue = newValue;
-        else if (selectedUnit.equals("dm"))
+        } else if (selectedUnit.equals("dm")) {
             this.dmValue = newValue;
-        else if (selectedUnit.equals("m"))
+        } else if (selectedUnit.equals("m")) {
             this.mValue = newValue;
-        else if (selectedUnit.equals("km"))
+        } else if (selectedUnit.equals("km")) {
             this.kmValue = newValue;
-        else if (selectedUnit.equals("in"))
+        } else if (selectedUnit.equals("in")) {
             this.inValue = newValue;
-        else if (selectedUnit.equals("ft"))
+        } else if (selectedUnit.equals("ft")) {
             this.ftValue = newValue;
-        else if (selectedUnit.equals("yd"))
+        } else if (selectedUnit.equals("yd")) {
             this.ydValue = newValue;
-        else if (selectedUnit.equals("mi"))
+        } else if (selectedUnit.equals("mi")) {
             this.miValue = newValue;
-        else
+        } else {
             this.ligaValue = newValue;
+        }
     }
 }
