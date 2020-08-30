@@ -1,6 +1,6 @@
 package main.lengthconverter;
 
-import main.NumericFormattedTextField;
+import main.utilities.NumericFormattedTextField;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.HPos;

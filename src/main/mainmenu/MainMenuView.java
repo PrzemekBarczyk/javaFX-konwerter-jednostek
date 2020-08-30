@@ -1,6 +1,6 @@
 package main.mainmenu;
 
-import main.Constants;
+import main.utilities.Constants;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.HPos;
